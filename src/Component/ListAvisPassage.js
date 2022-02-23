@@ -33,7 +33,7 @@ const ListAvisPassage = () => {
                 <td  onClick={() => { detailClick(avis) }}>{avis.attributes.avis}</td>
                 <td  onClick={() => { detailClick(avis) }}>{avis.attributes.worker}</td>
                 <td  onClick={() => { detailClick(avis) }}>{avis.attributes.client}</td>
-                <td><Button type="primary" danger onClick={()=>{deleteAvis(avis.id)}}>Supprimer</Button></td>
+                <td><Button type="primary" danger onClick={()=>{deleteAvis(avis.id)}}>Supprimer </Button></td>
             </tr>
                  
         )

@@ -35,7 +35,7 @@ const DetailAvis = () => {
 
     useEffect(() => {
         detailedAvis()
-    }, [])
+    },[])
 
     return (
         <div>
