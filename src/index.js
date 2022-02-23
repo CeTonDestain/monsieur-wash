@@ -6,6 +6,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import NewAvisPassage from './Component/NewAvisPassage';
+import ListAvisPassage from './Component/ListAvisPassage';
+import DetailAvis from './Component/DetailAvis';
 
 
 const Root=()=>{
@@ -14,6 +16,8 @@ const Root=()=>{
     <Routes>
     <Route exact path='/create-avis' element={<NewAvisPassage/>}/>
       <Route exact path='/' element={<App/>}/>
+      <Route exact path='/avis' element={<ListAvisPassage/>}/>
+      <Route exact path='/avis/:avis' element={<DetailAvis />}/>
     </Routes>
     </BrowserRouter>
   )

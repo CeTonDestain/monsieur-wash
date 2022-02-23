@@ -21,8 +21,8 @@ function App() {
         </Link>
         </div>
         <div>
-        <Link to="/create-avis">
-        <Button type="primary">Nouveau avis de passage</Button>
+        <Link to="/avis">
+        <Button type="primary">Listes des avis de passage</Button>
         </Link>
         </div>
         </div>

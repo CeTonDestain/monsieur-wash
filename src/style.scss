@@ -2,7 +2,7 @@ body{
     background-color: beige;
 }
 .mainHeader{
-    background-color: grey;
+    background-color: rgba(6, 136, 187, 0.822);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,8 +20,11 @@ body{
         height: 20rem;
         width: 100%;
         background-image: url(./img/depositphotos_5874732-stock-illustration-man-cleaning-window-squeegee-spray.jpg);
-        background-repeat: none;
         background-size: cover;
+        background-repeat: none;
+        @media screen and (min-width:783px) {
+            width: 30rem;
+        }
         
     }
     .mainButton{
@@ -71,5 +74,63 @@ body{
                 font-size: 2rem;
             }
         }
+    }
+}
+
+.mainDetailAvis{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1rem;
+    h2{
+        font-size: 2rem;
+        text-decoration: underline;
+    }
+    span{
+        font-size: 1.5rem;
+        text-decoration: underline;
+        text-align: left;
+        font-weight: 900;
+    }
+    .containerRecap{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    div{
+        display: flex;
+        flex-direction: column; 
+    }
+        .detail{
+            font-size: 1.2rem;
+        }
+        
+    }
+    .return{
+        text-decoration: none;
+        height: 2rem;
+        text-align: left;
+        font-size: 1.5rem;
+        
+    }
+}
+
+.listAvisTableau{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    
+    td,th{
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+    tr:nth-child(even){
+        background-color:#f2f2f2;
+    }
+    th{
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #04aa6d;
+        color: white;
     }
 }

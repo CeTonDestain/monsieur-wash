@@ -74,6 +74,7 @@ const NewAvisPassage = () => {
             <Header />
             <div className="main">
                 <div className="mainImageNew">
+                {console.log(workers)}
                 </div>
                 <div className="mainForm">
                     <div><h2>Avis de passage</h2></div>
