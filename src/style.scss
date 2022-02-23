@@ -9,6 +9,7 @@ body{
     height: 10rem;
 
 }
+//Accueil
 .main{
     display: flex;
     justify-content: center;
@@ -27,6 +28,9 @@ body{
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
+        margin-top: 3rem;
+        gap: 3rem;
         height: 10rem;
 
         .ant-btn-primary{
@@ -35,6 +39,37 @@ body{
             width: 25rem;
             font-size: 2rem;
 
+        }
+    }
+}
+
+//NewAvisPassage
+
+.mainForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2{
+        font-size: 3rem;
+    }
+    .newPassageForm{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        flex-direction: column;
+
+        div{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 2rem;
+            width: 100%;
+            
+            label{
+                font-size: 2rem;
+            }
         }
     }
 }

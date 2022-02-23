@@ -1,17 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
 import "antd/dist/antd.css";
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
+import NewAvisPassage from './Component/NewAvisPassage';
 
 
 const Root=()=>{
   return(
     <BrowserRouter>
     <Routes>
+    <Route exact path='/create-avis' element={<NewAvisPassage/>}/>
       <Route exact path='/' element={<App/>}/>
     </Routes>
     </BrowserRouter>
