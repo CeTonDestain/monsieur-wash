@@ -1,12 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+import "antd/dist/antd.css";
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter,Routes,Route } from 'react-router-dom';
 
+
+const Root=()=>{
+  return(
+    <BrowserRouter>
+    <Routes>
+      <Route exact path='/' element={<App/>}/>
+    </Routes>
+    </BrowserRouter>
+  )
+}
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Root />
   </React.StrictMode>,
   document.getElementById('root')
 );

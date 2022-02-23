@@ -1,0 +1,40 @@
+body{    
+    background-color: beige;
+}
+.mainHeader{
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .mainImage{
+        height: 20rem;
+        width: 100%;
+        background-image: url(./img/depositphotos_5874732-stock-illustration-man-cleaning-window-squeegee-spray.jpg);
+        background-repeat: none;
+        background-size: cover;
+        
+    }
+    .mainButton{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 10rem;
+
+        .ant-btn-primary{
+            border-radius: 3rem;
+            height: 5rem;
+            width: 25rem;
+            font-size: 2rem;
+
+        }
+    }
+}
